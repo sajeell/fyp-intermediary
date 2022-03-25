@@ -1,0 +1,93 @@
+:root {
+  --background-color: #b9c4cb;
+  --font-color: #707070;
+  --input-background-color: #efefef;
+  --button-background-color: #00978e;
+  --button-hover-color: #525151;
+  --box-heading-color: #dbdbdb;
+  --green-font-color: #009600;
+}
+
+.report {
+  cursor: pointer;
+}
+
+.dashboard-small-boxes-wrapper {
+  display: flex;
+  margin-top: 30px;
+}
+
+.dashboard-small-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  width: 200px;
+  border-radius: 20px;
+  height: 100px;
+  background-color: var(--button-background-color);
+  margin-right: 40px;
+  box-shadow: 3px 5px 10px 0 rgb(0 0 0 / 50%);
+}
+
+.dashboard-small-box-row-1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dashboard-small-box-row-1-heading {
+  color: var(--box-heading-color);
+  font-weight: bold;
+}
+
+.dashboard-small-box-row-1-stats {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  background-color: white;
+  border-radius: 20px;
+  color: var(--green-font-color);
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.dashboard-small-box-row-1-date {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  background-color: white;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.dashboard-small-box-row-2 {
+  color: white;
+}
+
+.dashboard-graphs-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.graph-heading-wrapper {
+  display: flex;
+  font-weight: lighter bold;
+}
+
+.empty-div {
+  background-color: var(--button-background-color);
+  width: 5px;
+  height: 30px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.dashboard-right-graph {
+  margin-left: 50px;
+}

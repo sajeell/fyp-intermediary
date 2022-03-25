@@ -1,0 +1,47 @@
+:root {
+  --background-color: #b9c4cb;
+  --font-color: #707070;
+  --input-background-color: #efefef;
+  --button-background-color: #00978e;
+  --button-hover-color: #525151;
+}
+
+.drawer-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+  background-color: var(--background-color);
+  width: 250px;
+  border-top-right-radius: 20px;
+  padding-top: 40px;
+  padding-left: 30px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 3px 5px 10px 0 rgb(0 0 0 / 50%);
+}
+
+.drawer-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.drawer-subtitle {
+  line-height: 10px;
+  color: var(--font-color);
+}
+
+.drawer-buttons-wrapper {
+  margin-top: 50px;
+}
+
+.drawer-button {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.drawer-button-icon img {
+  width: 23px !important;
+  margin-right: 17px;
+}
