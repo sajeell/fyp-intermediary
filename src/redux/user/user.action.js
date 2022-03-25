@@ -52,7 +52,7 @@ export const sellerLogin = (data) => {
       .post(`${Url}auth/login`, data, { headers: headers })
       .then(async (resp) => {
         let response = resp.data
-        if (response.data && response.data.role === 'Seller') {
+        if (response.data && response.data.role === 'Intermediary') {
           dispatch(setCurrentUser(response.data))
           dispatch(setAuthToken(response.access_token))
           toast.success('Success', {
