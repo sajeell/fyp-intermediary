@@ -75,7 +75,7 @@ const ViewTable = () => {
                     <td>
                       <Row>
                         <CopyToClipboard
-                          text={`https://barganttic.com/intermediary/${request._id}`}
+                          text={`http://localhost:3000/intermediary/${request._id}`}
                           onCopy={() => toast.success('Copied to clipboard')}
                         >
                           <Button
