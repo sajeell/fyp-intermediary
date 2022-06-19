@@ -129,9 +129,6 @@ const Login = () => {
                 />
               </div>
             </div>
-            <div className='forgot-password'>
-              <span>Forgot Password?</span>
-            </div>
             <div className='signin-button' onClick={onSubmitForm}>
               Sign In
             </div>

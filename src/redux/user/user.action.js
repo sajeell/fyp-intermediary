@@ -85,6 +85,24 @@ export const sellerLogin = (data) => {
   }
 }
 
+export const fetchUserDetail = (token, userId) => {
+  return (dispatch) => {
+    let headers = {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${token}`
+    }
+
+    axios
+      .get(`${Url}user/${userId}`, { headers: headers })
+      .then(async (resp) => {
+        dispatch(setUserDetail(resp.data))
+      })
+      .catch(err => {
+        console.error(err)
+      })
+  }
+}
+
 export const logout = () => {
   return (dispatch) => {
     dispatch(setAuthToken(null))
