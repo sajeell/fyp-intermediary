@@ -68,7 +68,7 @@ const Login = () => {
         </div>
         <div className='col'>
           <div className='row'>
-            <span className='headline'>Sign In</span>
+            <span className='headline'>Intermediary Sign In</span>
           </div>
           <Container className='login-form'>
             <div className='row'>
